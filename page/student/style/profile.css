@@ -1,0 +1,95 @@
+.account-manu {
+    height: 50px;
+    width: 50px;
+    margin-left: 15px; 
+}
+
+.account-manu img {
+    margin-top: 3px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.account-manu img:hover {
+    border: 4px solid white;
+}
+
+.title {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.title p {
+    padding: 20px 40px;
+    background-color: #97E585;
+    font-size: 23px;
+    width: fit-content;
+    border-radius: 10px 0 10px 0;
+}
+
+.sub-manu {
+    display: flex;
+    padding-top: 17px;
+}
+
+.sub-manu a {
+    display: flex;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #C0D6BA;
+    padding: 4px 10px 4px 4px;
+    margin: 0px 10px;
+}
+
+.sub-manu a:hover {
+    background-color: #d8ecd2;
+}
+
+.sub-manu a .icon {
+    background-color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.sub-manu a .icon img {
+    width: 100%;
+}
+
+.sub-manu a span {
+    margin-top: 3px;
+    margin-left: 5px;
+    color: black;
+}
+
+.content-profile {
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 100px;
+}
+
+.sub-content-profile {
+    width: 48%;
+    height: 500px;
+    background-color: #C0D6BA;
+    margin: 10px 0;
+}
+
+@media (max-width: 1330px) {
+    .content-profile {
+        padding: 20px 50px;
+    }
+    .sub-content-profile {
+        width: 96%;
+    }
+}
+

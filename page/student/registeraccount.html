@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../style/input_text.css">
+    <link rel="stylesheet" href="style/registeraccount.css">
+    <link rel="icon" href="../../pictures/Icon/Logo.png">
+    <script src="script/registeraccount.js"></script>
+    <title>MyInternship</title>
+</head> 
+<body>
+<header class="header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="../../index.html"><img src="../../pictures/Icon/Logo/logoSTD.png" alt="logo"></a>
+            </div>
+            <ul class="main-manu">
+                <a href="../../index.html"><li class="icon-home"><img src="../../pictures/Icon/home.png" alt="icon home"></li></a>
+                <a href="#"><li class="text-manu">ที่ฝึกงานทั้งหมด</li></a>
+                <a href="#"><li class="text-manu">ทำแบบทดสอบ</li></a>
+                <a href="#"><li class="text-manu manu-forcompany">สำหรับสถานประกอบการ</li></a>
+                <a href="#"><li class="text-manu">เข้าสู่ระบบ</li></a>
+            </ul>
+        </div>
+    </header>
+    <!-- conntent -->
+    <div class="content content-register">
+        <div class="title">
+            <p>ลงทะเบียนสำหรับนักศึกษา</p>
+        </div>
+        <div class="form-input">
+            <form action="#" method="POST">
+                <span>สมัครบัญชี</span>
+                <div class="input-section">
+                    <div class="input-username">
+                        <div class="icon-textbox">
+                            <img src="../../pictures/Icon/user.png" alt="">
+                        </div>
+                        <input class="username" type="text" name="username" placeholder="อีเมลล์หรือเบอร์โทร">
+                        <p class="log-username"></p>
+                    </div>
+                    <div class="input-password">
+                        <div class="icon-textbox">
+                            <img src="../../pictures/Icon/lock.png" alt="">
+                        </div>
+                        <input class="password" type="password" name="password" onkeydown="checkpassword()" placeholder="รหัสผ่าน">
+                        <p class="log-password"></p>
+                        <div class="icon-textbox icon-show" onclick="showandhidepsw(1)">
+                            <img class="iconlookpsw" src="../../pictures/Icon/show.png" alt="">
+                        </div>
+                    </div>
+                    <!-- tab password level -->
+                    <ul class="psw-level">
+                        <li class="tab1"></li>
+                        <li class="tab2"></li>
+                        <li class="tab3"></li>
+                        <li class="tab4"></li>
+                    </ul>
+                    <span>ยืนยันรหัสผ่าน</span>
+                    <div class="input-password">
+                        <div class="icon-textbox">
+                            <img src="../../pictures/Icon/lock.png" alt="">
+                        </div>
+                        <input class="password-confirm" type="password" name="password" onkeydown="checkpassword()" placeholder="รหัสผ่าน">
+                        <p class="log-password-confirm"></p>
+                        <div class="icon-textbox icon-show" onclick="showandhidepsw(2)">
+                            <img class="iconlookpsw" src="../../pictures/Icon/show.png" alt="">
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="not-robot" value="true">
+                        <label for="not-robot">I'm not a robot</label>
+                    </div>
+                </div>
+                <div class="box-submit">
+                    <input type="submit" value="ลงทะเบียน">
+                    <a href="profile.html">next temp</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="content-footer">
+            <div class="logo-footer">
+                <img src="../../pictures/Icon/Logo/logoSTD.png" alt="">
+            </div>
+            <div class="informations">
+                <div class="sub-content">
+                    <p>เนื้อหา</p>
+                    <a href="#">ที่ฝึกงานทั้งหมด</a>
+                    <a href="#">สถานประกอบการที่เข้าร่วม</a>
+                    <a href="#">ค้นหาที่ฝึกงานด้วยตัวเอง</a>
+                </div>
+                <div class="line"></div>
+                <div class="sub-content">
+                    <p>ค้นหา</p>
+                    <a href="#">ค้นหาตามสายงาน</a>
+                    <a href="#">ค้นหาตามทักษะ</a>
+                    <a href="#">ค้นหาตามที่อยู่</a>
+                </div>
+                <div class="line"></div>
+                <div class="sub-content">
+                    <p>สำหรับนักเรียนนักศึกษา</p>
+                    <a href="#">ลงทะเบียน</a>
+                    <a href="#">ทำแบบทดสอบ</a>
+                </div>
+                <div class="line"></div>
+                <div class="sub-content">
+                    <p>สำหรับสถานประกอบการ</p>
+                    <a href="#">ลงทะเบียน</a>
+                    <a href="#">ลงประกาศรับเด็กฝึกงาน</a>
+                </div>
+                <div class="line"></div>
+                <div class="sub-content">
+                    <p>เว็บไซต์</p>
+                    <a href="#">เกี่ยวกับเว็บไซต์</a>
+                    <a href="#">เกี่ยวผู้พัฒนา</a>
+                    <a href="#">ติดต่อเรา</a>
+                    <a href="#">Icon</a>
+                    <a href="#">ภาพประกอบเว็บไซต์</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

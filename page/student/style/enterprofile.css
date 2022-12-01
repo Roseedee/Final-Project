@@ -1,0 +1,107 @@
+.title {
+    padding: 0;
+}
+
+.title p {
+    padding: 20px 40px;
+    margin-bottom: 20px;
+    background-color: #97E585;
+    font-size: 23px;
+    width: fit-content;
+    border-radius: 10px 0 10px 0;
+}
+
+.content-enterprofile .form-input {
+    width: 100%;
+}
+
+.form-input {
+    padding-top: 20px;
+}
+
+.form-input form {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+.form-input form span {
+    font-size: 20px;
+    display: block;
+    margin: 40px 0px 10px 0px;
+}
+
+.input-section {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.input {
+    margin: 0 5px;
+}
+
+.input-enterprofile1 {
+    margin-left: 0px;
+}
+
+.input-enterprofile2 {
+    width: 40%;
+    min-width: 190px;
+}
+.input-enterprofile3 {
+    width: 40%;
+    min-width: 190px;
+}
+.input-enterprofile4{
+    margin-right: 0px;
+}
+
+.input-enterprofile5 {
+    width: 40%;
+    margin-left: 0px;
+}
+
+.input-enterprofile6 {
+    width: 25%;
+    margin-right: 0px;
+}
+
+.input-enterprofile7 {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+
+.input-enterprofile8 {
+    margin-left: 0px;
+}
+
+.input-enterprofile12 {
+    width: 50%;
+    margin-left: 0px;
+}
+
+.input-enterprofile13 {
+    width: 10%;
+    margin-right: 0px;
+}
+
+.box-submit {
+    width: 100%;
+    text-align: right;
+    padding: 40px 0px 80px 0px;
+}
+
+.box-submit input[type="submit"] {
+    padding: 10px 70px;
+    border: 2px solid #97E585;
+    border-radius: 5px;
+    background-color: white;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.box-submit input[type="submit"]:hover {
+    background-color: #97E585;
+}
