@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/registeraccount.css">
     <link rel="icon" href="../../pictures/Icon/Logo.png">
     <script src="script/registeraccount.js"></script>
+    <script src="../../script/input_password.js"></script>
     <title>MyInternship</title>
 </head> 
 <body>
@@ -48,25 +49,25 @@
                         </div>
                         <input class="password" type="password" name="password" onkeydown="checkpassword()" placeholder="รหัสผ่าน">
                         <p class="log-password"></p>
-                        <div class="icon-textbox icon-show" onclick="showandhidepsw(1)">
+                        <div class="icon-textbox icon-show" onclick="showAndHidepsw(0)">
                             <img class="iconlookpsw" src="../../pictures/Icon/show.png" alt="">
                         </div>
                     </div>
                     <!-- tab password level -->
                     <ul class="psw-level">
-                        <li class="tab1"></li>
-                        <li class="tab2"></li>
-                        <li class="tab3"></li>
-                        <li class="tab4"></li>
+                        <li class="psw-level-tab"></li>
+                        <li class="psw-level-tab"></li>
+                        <li class="psw-level-tab"></li>
+                        <li class="psw-level-tab"></li>
                     </ul>
                     <span>ยืนยันรหัสผ่าน</span>
                     <div class="input-password">
                         <div class="icon-textbox">
                             <img src="../../pictures/Icon/lock.png" alt="">
                         </div>
-                        <input class="password-confirm" type="password" name="password" onkeydown="checkpassword()" placeholder="รหัสผ่าน">
+                        <input class="password password-confirm" type="password" name="password" onchange="checkpassword()" placeholder="รหัสผ่าน">
                         <p class="log-password-confirm"></p>
-                        <div class="icon-textbox icon-show" onclick="showandhidepsw(2)">
+                        <div class="icon-textbox icon-show" onclick="showAndHidepsw(1)">
                             <img class="iconlookpsw" src="../../pictures/Icon/show.png" alt="">
                         </div>
                     </div>

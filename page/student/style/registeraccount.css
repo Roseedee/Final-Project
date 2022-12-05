@@ -21,7 +21,8 @@
 }
 
 .form-input form {
-    width: 30%;
+    min-width: 300px;
+    width: 45%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -130,7 +131,7 @@
     margin-bottom: 50px;
 }
 
-.input-section .psw-level li {
+.input-section .psw-level .psw-level-tab {
     height: 5px;
     width: 24%;
     background-color: #EEDCDC;
