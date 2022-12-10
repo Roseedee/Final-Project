@@ -78,7 +78,7 @@ body {
 .main-manu a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 1vW;
     font-weight: light;
 }
 
@@ -129,7 +129,6 @@ body {
 }
 
 .search form .submit {
-    width: 70px;
     padding: 8px 18px;
     border-radius: 5px;
     border: none;
