@@ -86,21 +86,26 @@
     text-align: center;
 }
 
+.sub-content-profile-end {
+    float: left;
+}
+
 .user-img-container .user-img {
-    padding-bottom: 3vw;
+    padding-bottom: 1.5vw;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .user-img-container .user-name {
-    padding: 0xp auto;
-    font-size: 1.75vw;
+    font-size: 1.5vw;
+    font-weight: 600;
+
 }
 
 .user-img-container .user-img img {
     min-width: 170px;
-    width: 40%;
+    width: 30%;
     height: auto;
     border-radius: 50%;
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
@@ -111,16 +116,48 @@
     padding: 0.5vw;
     background-color: #97E585;
     border-radius: 5px;
-    font-size: 22px;
+    font-size: 1.2vw;
+    font-weight: 480;
+}
+
+.sub-content-profile table {
+    padding: 1.3vw 1.8vw;
+    width: 100%;
+}
+
+.sub-content-profile table tr {
+    width: inherit;
+    font-size: 1vw;
+}
+
+.sub-content-profile table tr td {
+    height: 2.4vw;
+}
+
+.sub-content-profile table tr .col1 {
+    width: 30%;
+}
+
+.sub-content-profile table tr .col2 {
+    font-weight: 300;
 }
 
 
+
+/* responsive sub content section */
 @media (max-width: 1330px) {
     .content-profile {
         padding: 20px 50px;
     }
     .sub-content-profile {
         width: 100%;
+    }
+}
+
+/* hiden sub manu */
+@media (max-width: 1140px) {
+    .sub-manu {
+        display: none;
     }
 }
 
