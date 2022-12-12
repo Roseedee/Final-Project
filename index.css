@@ -25,18 +25,6 @@ body {
     width: 70%;
 }
 
-.search form .submit {
-    width: calc(30% - 15px);
-    padding: 8px 18px;
-    border-radius: 5px;
-    border: none;
-    background-color: #65DB49;
-    margin-left: 5px;
-    box-sizing: border-box;
-    font-size: 16px;
-    color: white;
-}
-
 .search .search-preview {
     display: flex;
     flex-wrap: wrap;

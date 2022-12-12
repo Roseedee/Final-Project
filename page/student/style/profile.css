@@ -1,18 +1,11 @@
+@import "public-style-st.css";
 
 .title {
-    padding: 0;
     display: flex;
     justify-content: space-between;
     padding-right: 20px;
 }
 
-.title p {
-    padding: 20px 40px;
-    background-color: #97E585;
-    font-size: 23px;
-    width: fit-content;
-    border-radius: 10px 0 10px 0;
-}
 
 .sub-menu {
     display: flex;
@@ -28,6 +21,7 @@
     padding: 3px 10px 3px 3px;
     border-radius: 20px;
     margin: 0px 10px;
+    color: #000;
 }
 
 .sub-menu a .icon-sub-menu {
@@ -60,7 +54,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-around;
-    padding: 70px 100px;
+    padding: 50px 100px;
 }
 
 .sub-content-profile {
@@ -129,9 +123,87 @@
 }
 
 .extension-sub-content-profile {
-    font-size: 22px;
+    font-size: 16px;
     width: 100%;
 }
+
+.extension-sub-content-profile .skills-container {
+    font-weight: 350;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.extension-sub-content-profile .skills-container .skill {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: #E1E1E1;
+    border-radius: 3px;
+    width: fit-content;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.extension-sub-content-profile .skills-container .skill .skill-name {
+    margin-right: 10px;
+}
+
+.extension-sub-content-profile .skills-container .skill .btn-cancel-skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.extension-sub-content-profile .skills-container .skill .btn-cancel-skill:hover {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.extension-sub-content-profile .skills-container .skill .btn-cancel-skill img {
+    width: 90%;
+}
+
+.extension-sub-content-profile .skills-container .add-skill {
+    cursor: pointer;
+    color: #9199CB;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.extension-sub-content-profile .form-add-skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 5px 10px 10px;
+}
+
+.extension-sub-content-profile .form-add-skill div {
+    width: 50%;
+}
+
+.extension-sub-content-profile .form-add-skill .submit-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.extension-sub-content-profile .form-add-skill div select {
+    width: 95%;
+}
+
+.submit {
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+.btn-cancel {
+    margin-left: 10px;
+}
+
 
 /* responsive sub content section */
 @media (max-width: 1330px) {

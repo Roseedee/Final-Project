@@ -14,3 +14,27 @@
     border-color: dodgerblue;
     box-shadow: 0 0 5px 0 dodgerblue;
 }
+
+.submit {
+    width: calc(30% - 15px);
+    padding: 8px 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: #65DB49;
+    margin-left: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: white;
+}
+
+.btn-cancel {
+    background-color: #8B8B8B;
+}
+
+.submit:hover {
+    background-color: #9cee87;
+}
+
+.btn-cancel:hover {
+    background-color: #b1b1b1;
+}
