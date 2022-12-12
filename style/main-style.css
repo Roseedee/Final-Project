@@ -1,0 +1,14 @@
+@import "navbar.css";
+@import "content.css";
+@import "footer.css";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: kanit;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
