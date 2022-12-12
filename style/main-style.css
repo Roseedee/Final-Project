@@ -1,6 +1,7 @@
 @import "navbar.css";
 @import "content.css";
 @import "footer.css";
+@import "input_text.css";
 
 * {
     padding: 0px;
