@@ -8,8 +8,6 @@ body {
     padding: 20px;
 }
 
-@import "style/main-style.css";
-
 .content-search {
     display: flex;
     margin: 20px;
