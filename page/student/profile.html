@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- include style fille -->
     <link rel="stylesheet" href="style/profile.css">
-    <!-- include js file-->
-    <script src="script/profile.js"></script>
     <!-- include icon title page -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <link rel="icon" href="../../pictures/Icon/icon_logo.png">
     <title>MyInternship</title>
 </head> 
@@ -109,14 +109,14 @@
             <hr width="100%">
             <div class="sub-content-profile extension-sub-content-profile">
                 <p>ทักษะและจุดแข็งของคุณมีอะไรบ้าง</p>
-                <div class="skills-container">
-                    <div class="skill"><span class="skill-name">ไอที่ : C++</span><div class="btn-cancel-skill"><img src="../../pictures/Icon/cancel.png" alt=""></div></div>
-                    <div class="skill"><span class="skill-name">ไอที่ : HTML</span><div class="btn-cancel-skill"><img src="../../pictures/Icon/cancel.png" alt=""></div></div>
-                    <div class="skill"><span class="skill-name">ไอที่ : CSS</span><div class="btn-cancel-skill"><img src="../../pictures/Icon/cancel.png" alt=""></div></div>
-                    <div class="skill"><span class="skill-name">ไอที่ : PHP</span><div class="btn-cancel-skill"><img src="../../pictures/Icon/cancel.png" alt=""></div></div>
-                    <div class="add-skill">เพิ่มทักษะ</div>
+                <div class="container">
+                    <div class="selected"><span class="selected-name">ไอที่ : C++</span><div class="btn-cancel-selected"><img src="../../pictures/Icon/cancel.png" alt=""></div></div>
+                    <div class="selected"><span class="selected-name">ไอที่ : HTML</span><div class="btn-cancel-selected"><img src="../../pictures/Icon/cancel.png" alt=""></div></div>
+                    <div class="selected"><span class="selected-name">ไอที่ : CSS</span><div class="btn-cancel-selected"><img src="../../pictures/Icon/cancel.png" alt=""></div></div>
+                    <div class="selected"><span class="selected-name">ไอที่ : PHP</span><div class="btn-cancel-selected"><img src="../../pictures/Icon/cancel.png" alt=""></div></div>
+                    <div class="add-selection" id="add-skill">เพิ่มทักษะ</div>
                 </div>
-                <form action="#" class="form-add-skill">
+                <form action="#" class="form-add-selection" id="form-add-selection-skill">
                     <div>
                         <label for="skill-type">ประเภทของทักษะ</label><br>
                         <select name="skill-type" class="input">
@@ -140,15 +140,71 @@
                     </div>
                     <div class="submit-container">
                         <input type="submit" value="เพิ่ม" class="submit">
-                        <input type="button" value="ยกเลิก" class="submit btn-cancel">
+                        <input type="button" value="ยกเลิก" class="submit btn-cancel" id="cancel-add-skill">
                     </div>
                 </form>
             </div>
             <hr width="100%">
             <div class="sub-content-profile extension-sub-content-profile">
                 <p>สายงานที่คุณสนใจ</p>
-                <div>
+                <div class="container">
+                    <div class="selected"><span class="selected-name">วิศวกรรม</span><div class="btn-cancel-selected"><img src="../../pictures/Icon/cancel.png" alt=""></div></div>
+                    <div class="selected"><span class="selected-name">การบัญชี</span><div class="btn-cancel-selected"><img src="../../pictures/Icon/cancel.png" alt=""></div></div>
+                    <div class="add-selection" id="add-interested">เพิ่มทักษะ</div>
                 </div>
+                <form action="#" class="form-add-selection" id="form-add-selection-interested">
+                    <div>
+                        <label for="interest-type">ประเภทของทักษะ</label><br>
+                        <select name="interest-type" class="input">
+                            <option value="">วิศวกรรม</option>
+                            <option value="">การบัญชี</option>
+                            <option value="">การผลิต</option>
+                            <option value="">การศึกษา</option>
+                        </select>
+                    </div>
+                    <div class="submit-container">
+                        <input type="submit" value="เพิ่ม" class="submit">
+                        <input type="button" value="ยกเลิก" class="submit btn-cancel" id="cancel-add-interested">
+                    </div>
+                </form>
+            </div>
+            <hr width="100%">
+            <div class="sub-content-profile chart-container">
+                <p class="sub-content-title">กราฟจากการทำแบบทดสอบ</p>
+                <div>
+                    <canvas id="mychart" width="100%"></canvas>
+                </div>
+                <script>
+                    const my_chart = document.getElementById("mychart");
+                    let data = {
+                        labels:['ด้านมิติสัมพันธ์', 'ด้านภาษา', 'ด้านตรรกะและคณิตศาสตร์', 'ด้านร่างกายและการเคลื่อนไหว', 'ด้านดนตรี', 'ด้านมนุษย์สัมพันธ์', 'ด้านความเข้าใจตนเอง' , 'ด้านธรรมชาติวิทยา'],
+                        datasets:[
+                            {
+                            label: 'My Chart',
+                            data: [100,20,50,54,56,58,92,45],
+                            fill: true,
+                            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                            borderColor: 'rgb(255, 99, 132)',
+                            pointBackgroundColor: 'rgb(255, 99, 132)',
+                            pointBorderColor: '#fff',
+                            pointHoverBackgroundColor: '#fff',
+                            pointHoverBorderColor: 'rgb(255, 99, 132)'
+                            }
+                        ]
+                    }                
+                    new Chart(my_chart, {
+                        type: 'radar',
+                        data: data,
+                        options: {
+                            element: {
+                                line: {
+                                    borderWidth: 1
+                                }
+                            }
+                        },
+                    })
+                </script>
+                <p><a href="#">กดที่นี้</a> เพื่อให้ระบบ FIs ค้นหาที่ฝึกงานที่เหมาะสมกับคุณ</p>
             </div>
         </div>
     </div>
@@ -196,5 +252,6 @@
             </div>
         </div>
     </div>
+    <script src="script/profile.js"></script>
 </body>
 </html>
