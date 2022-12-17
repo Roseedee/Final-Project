@@ -1,0 +1,47 @@
+@import "public-style-st.css";
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #97E585;
+    border-radius: 10px 10px 0 0;
+}
+
+.title div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title div p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    margin: 0px;
+}
+
+.title div .btn-prev {
+    border-radius: 10px 0 0 0;
+    padding: 10px 10px;
+}
+
+.title div .btn-prev:hover {
+    background-color: #BFCEAB;
+}
+
+.title div .btn-prev img {
+    width: 40%;
+}
+
+.sub-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.sub-menu a {
+    padding: 0px 40px;
+}
