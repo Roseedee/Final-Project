@@ -1,5 +1,6 @@
 @import "public-style-st.css";
 
+
 .title {
     width: 100%;
     display: flex;
@@ -44,4 +45,13 @@
 
 .sub-menu a {
     padding: 0px 40px;
+}
+
+.content-settings {
+    padding: 50px;
+}
+
+.section-menu .section-title {
+    font-size: 20px;
+    padding-bottom: 10px;
 }
