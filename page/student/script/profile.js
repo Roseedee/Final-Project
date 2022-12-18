@@ -1,4 +1,3 @@
-
 let add_skill = document.getElementById("add-skill");
 let add_interested = document.getElementById("add-interested");
 
@@ -13,7 +12,6 @@ document.getElementById("cancel-add-interested").onclick = HidenForm_interested;
 //get DOM form skill form and interested form
 let form_skill = document.getElementById("form-add-selection-skill").style;
 let form_interested = document.getElementById("form-add-selection-interested").style;
-
 
 function DisplayForm_skill() {
     form_skill.display = "flex";
@@ -34,6 +32,3 @@ function HidenForm_interested() {
     form_interested.display = "none";
     add_interested.style.display = "block";
 }
-
-
-

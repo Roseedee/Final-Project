@@ -1,5 +1,12 @@
 @import "public-style-st.css";
 
+:root {
+    --content_font_size_l : 18;
+    --content_font_size_std : 16px;
+    --content_font_size_m : 14px;
+    --content_font_size_s : 12px;
+}
+
 .title {
     display: flex;
     justify-content: space-between;
@@ -107,7 +114,7 @@
 
 .sub-content-profile table tr {
     width: inherit;
-    font-size: 16px;
+    font-size: var(--content_font_size);
 }
 
 .sub-content-profile table tr td {
@@ -233,7 +240,8 @@
     }
     .sub-content-profile-empty {
         display: none;
-    } 
+    }
+
 }
 
 /* hiden sub menu */
@@ -243,5 +251,8 @@
     }
     .extension-sub-content-profile .form-add-selection {
         flex-direction: column;
+    }
+    .sub-content-profile table tr {
+        font-size: var(--content_font_size_s);
     }
 }
