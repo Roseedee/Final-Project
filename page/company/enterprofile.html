@@ -4,38 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../../pictures/Icon/Logo.png">
-    <link rel="stylesheet" href="../../index.css">
-    <link rel="stylesheet" href="../../style/input_text.css">
+    <!-- include style file -->
+    <link rel="stylesheet" href="../../style/main-style.css">
     <link rel="stylesheet" href="style/enterprofile.css">
-
+    <link rel="stylesheet" href="style/public-style-st.css">
+    
+    <link rel="icon" href="../../pictures/Icon/icon_logo.png">
     <title>MyInternship</title>
 </head> 
 <body>
 <header class="header">
         <div class="navbar">
             <div class="logo">
-                <a href="index.html"><img src="pictures/Icon/Logo/logoSTD.png" alt="logo"></a>
+                <a href="../../index.html"><img src="../../pictures/Icon/Logo/logoSTD.png" alt="logo"></a>
             </div>
-            <ul class="main-menu">
-                <a href="index.html"><li class="icon-home"><img src="pictures/Icon/home.png" alt="icon home"></li></a>
-                <a href="#"><li class="text-menu">ที่ฝึกงานทั้งหมด</li></a>
-                <a href="#"><li class="text-menu">ทำแบบทดสอบ</li></a>
-                <a href="#"><li class="text-menu menu-forcompany">สำหรับสถานประกอบการ</li></a>
-                <a href="#"><li class="text-menu">เข้าสู่ระบบ</li></a>
-                <a href="page/student/enterprofile.html"><li class="text-menu menu-register">ลงทะเบียน</li></a>
-            </ul>
+            <div class="main-menu">
+                <a href="../../index.html" class="icon-home"><img src="../../pictures/Icon/home.png" alt="icon home"></a>
+                <a href="#">ที่ฝึกงานทั้งหมด</a>
+                <a href="#">ทำแบบทดสอบ</a>
+                <a href="#" class="menu-forcompany">สำหรับสถานประกอบการ</a>
+                <a href="#">เข้าสู่ระบบ</a>
+            </div>
         </div>
     </header>
-    <!-- โครงสร้างหลัก -->
-    <div class="content">
-        <input type="text" class="input inputn">
+    <!-- conntent -->
+    <div class="content content-enterprofile">
+        <div class="title">
+            <p>ลงทะเบียนสำหรับสถานประกอบการ</p>
+        </div>
+        <div class="form-input">
+            <form action="#" method="POST">
+                <span>ชื่อสถานประกอบการ</span>
+                <div class="input-group">
+                    <div class="input-section">
+                        <input class="input" type="text" name="name-th" placeholder="ชื่อสถานประกอบการ(th)">
+                        <p class="log">name th log</p>
+                    </div>
+                    <div class="input-section">
+                        <input class="input" type="text" name="name-eng" placeholder="ชื่อสถานประกอบการ(eng)">
+                        <p class="log">name eng log</p>
+                    </div>
+                </div>
+                <span>ส่วนติดต่อ</span>
+                <div class="input-group">
+                    <div class="input-section input-email">
+                        <input class="input" type="text" name="name-th" placeholder="ที่อยู่อีเมล์">
+                        <p class="log">email log</p>
+                    </div>
+                    <div class="input-section">
+                        <input class="input" type="text" name="name-eng" placeholder="เบอร์โทรศัพท์">
+                        <p class="log">phone log</p>
+                    </div>
+                </div>
+                <span>เกี่ยวกับสถานที่ประกอบการ</span>
+                <div class="container-input-preview">
+                    <div class="input-section input-text-area">
+                        <textarea id="edit-preview" name="edit-preview" class="input" rows="10"  onkeydown="textarea()" placeholder="รายละเอียดของงาน"></textarea>
+                        <p class="log">สามารถใช้ HMTL หรือ CSS ในการปรับแต่งต่างๆ ได้</p>
+                    </div>
+                    <div class="input-section">
+                        <p class="log">preview</p>
+                        <p id="preview"></p> 
+                    </div>
+                </div>
+                
+                <span>ที่อยู่สถานประกอบการ</span>
+                <div class="input-group" style="display: flex; flex-direction: column;">
+                    <div class="input-section">
+                        <input class="input" type="text" name="address" placeholder="รายละเอียดที่อยู่">
+                        <p class="log">address log</p>
+                    </div>
+                    <div class="input-section" style="display: flex; flex-direction: row; flex-wrap: wrap;">
+                        
+                        <div class="sub-input">
+                            <input class="input" type="text" name="address" placeholder="ตำบล/แขวน">
+                            <p class="log">sub-district log</p>
+                        </div>
+                        <div class="sub-input">
+                            <input class="input" type="text" name="address" placeholder="อำเภอ/เขต">
+                            <p class="log">district log</p>
+                        </div>
+                        <div class="sub-input">
+                            <input class="input" type="text" name="province" placeholder="จังหวัด">
+                            <p class="log">province log</p>
+                        </div>
+                        <div class="sub-input">
+                            <input class="input" type="text" name="zipcode" placeholder="รหัสไปรษณีย์">
+                            <p class="log">zipcode log</p>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </form>
+        </div>
     </div>
 
     <div class="footer">
         <div class="content-footer">
             <div class="logo-footer">
-                <img src="pictures/Icon/Logo/logoSTD.png" alt="">
+                <img src="../../pictures/Icon/Logo/logoSTD.png" alt="">
             </div>
             <div class="informations">
                 <div class="sub-content">
@@ -75,5 +143,12 @@
             </div>
         </div>
     </div>
+    <script>
+        let editor = document.getElementById('edit-preview');
+        let preview = document.getElementById('preview');
+        function textarea() {
+            preview.innerHTML = editor.value;
+        }
+    </script>
 </body>
 </html>

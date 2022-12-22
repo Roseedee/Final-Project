@@ -1,0 +1,30 @@
+@import "../../../style/main-style.css";
+
+.title {
+    padding: 0;
+}
+
+.title p {
+    padding: 20px 40px;
+    margin-bottom: 20px;
+    background-color: #50C1BD;
+    font-size: 23px;
+    width: fit-content;
+    border-radius: 10px 0 10px 0;
+}
+
+.main-menu a:last-child:hover {
+    background-color: none;
+}
+
+.main-menu a .account-menu {
+    display: block;
+    width: 2.9vw;
+    height: 2.9vw;
+}
+
+.log {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+}

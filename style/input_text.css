@@ -7,6 +7,7 @@
     font-weight: 300;
     text-overflow: ellipsis;
     transition: 0.3s;
+    
 }
 
 .input:focus {
@@ -36,4 +37,8 @@
 
 .btn-cancel:hover {
     background-color: #b1b1b1;
+}
+
+.input {
+    width: 100%;
 }

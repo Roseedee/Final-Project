@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- include style fille -->
+    <link rel="stylesheet" href="style/settings.css">
+    <!-- include icon title page -->
+    <link rel="icon" href="../../pictures/Icon/icon_logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        
+        </script>
+    <title>MyInternship</title>
+</head> 
+<body>
+<header class="header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="dashboard.html"><img src="../../pictures/Icon/Logo/logoSTD.png" alt="logo"></a>
+            </div>
+            <div class="main-menu">
+                <a href="dashboard.html" class="icon-home"><img src="../../pictures/Icon/home.png" alt="icon home"></a>
+                <a href="#">ที่ฝึกงานทั้งหมด</a>
+                <a href="#">ทำแบบทดสอบ</a>
+                <a href="profile.html"><img class="account-menu" src="../../pictures/Icon/user_icon.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <!-- conntent -->
+    <div class="content">
+        <div class="title">
+            <div>
+                <a href="profile.html"><div class="btn-prev">
+                    <img src="../../pictures/Icon/prev.png" alt="">
+                </div></a>
+                <p>ตั่งค่าบัญชี</p>
+            </div>
+            <div class="sub-menu">
+                <a href="#section-menu1">ทั่วไป</a>
+                <a href="#section-menu2">ความเป็นส่วนตัว</a>
+                <a href="#section-menu3">ความปลอดภัย</a>
+                <a href="#section-menu4">การแจ้งเตือน</a>
+            </div>
+        </div>
+        <div class="content-settings">
+            <div class="section-menu" id="section-menu1">
+                <p class="section-title">การตั้งค่าทั่วไป</p>
+                <hr width="100%">
+                <div class="section">
+                    <table>
+                        <tr>
+                            <td>ชื่อ</td>
+                            <td>
+                                <p id="name">รอซีดี เจ๊ะแล๊ะ</p>
+                                <form action="#" id="form-name">
+                                    <input class="input" type="text" name="name" placeholder="รอซีดี เจ๊ะแล๊ะ">
+                                    <input type="submit" value="เปลี่ยน" class="submit" >
+                                </form>
+                            </td>
+                            <td align="right"><a id="cancel1">แก้ไข</a></td>
+                        </tr>
+                        <tr>
+                            <td>อีเมลล์</td>
+                            <td>
+                                <p id="email">roseedee2002@gmail.com</p>
+                                <form action="#" id="form-email">
+                                    <input class="input" type="text" name="name" placeholder="roseedee2002@gmail.com">
+                                    <input type="submit" value="เปลี่ยน" class="submit">
+                                </form>
+                            </td>
+                            <td align="right"><a id="cancel2">แก้ไข</a></td>
+                        </tr>
+                        <tr>
+                            <td>เบอร์ติดต่อ</td>
+                            <td>
+                                <p id="tel">0630742165</p>
+                                <form action="#" id="form-tel">
+                                    <input class="input" type="text" name="name" placeholder="0630742165">
+                                    <input type="submit" value="เปลี่ยน" class="submit">
+                                </form>
+                            </td>
+                            <td align="right"><a id="cancel3">แก้ไข</a></td>
+                        </tr>
+                        <tr>
+                            <td>ลบบัญชีผู้ใช้ของคุณ</td>
+                            <td  align="right" colspan="2"><a href="#">ลบ</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="section-menu" id="section-menu2">
+                <p class="section-title">การตั้งค่าความเป็นส่วนตัว</p>
+                <hr width="100%">
+                <div class="section">
+                    <form action="#">
+                        <div class="container-input">
+                            <input type="checkbox" onchange="checkBox_change(1)" name="allow-profile"><label for="allow-profile">อนุญาตให้แสดงรูปโปรไฟล์เมื่อสถานประกอบการใดๆ เข้ามาชม</label>
+                        </div>
+                        <div class="container-input">
+                            <input type="checkbox" onchange="checkBox_change(1)" name="allow-profile-savepost"><label for="allow-profile">อนุญาตให้แสดงตัวตนของคุณเมื่อคุณทำการบัญทึกโพสต์ของสถานประกอบการใดๆ</label>
+                        </div>
+                        <input type="submit" class="submit container-input" id="submit-btn1" value="บันทึก">
+                    </form>
+                </div>
+            </div>
+            <div class="section-menu" id="section-menu3">
+                <p class="section-title">การตั้งค่าความปลอดภัย</p>
+                <hr width="100%">
+                <div class="section">
+                    <table>
+                        <tr>
+                            <td>รหัสผ่าน</td>
+                            <td>********</td>
+                            <td align="right"><a href="#">เปลี่ยน</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="section-menu" id="section-menu4">
+                <p class="section-title">การตั้งค่าการแจ้งเตือน</p>
+                <hr width="100%">
+                <div class="section">
+                    <form action="#">
+                        <div class="container-input">
+                            <input type="checkbox" onchange="checkBox_change(2)" name="notify-company-lookme"><label for="notify-company-lookme">แจ้งเตือนไปหาคุณเมื่อมีสถานประกอบการใดๆ เข้ามาชมโปรไฟล์ของคุณ</label>
+                        </div>
+                        <div class="container-input">
+                            <input type="checkbox" onchange="checkBox_change(2)" name="notify-post-match"><label for="notify-post-match">แจ้งเตือนไปหาคุณเมื่อมีโพสต์ใหม่ที่ตรงกับสายงานคุณสนใจ</label>
+                        </div>
+                        <input type="submit" class="submit container-input" id="submit-btn2" value="บันทึก">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="content-footer">
+            <div class="logo-footer">
+                <img src="../../pictures/Icon/Logo/logoSTD.png" alt="">
+            </div>
+            <div class="informations">
+                <div class="sub-content">
+                    <p>เนื้อหา</p>
+                    <a href="#">ที่ฝึกงานทั้งหมด</a>
+                    <a href="#">สถานประกอบการที่เข้าร่วม</a>
+                    <a href="#">ค้นหาที่ฝึกงานด้วยตัวเอง</a>
+                </div>
+                <div class="line"></div>
+                <div class="sub-content">
+                    <p>ค้นหา</p>
+                    <a href="#">ค้นหาตามสายงาน</a>
+                    <a href="#">ค้นหาตามทักษะ</a>
+                    <a href="#">ค้นหาตามที่อยู่</a>
+                </div>
+                <div class="line"></div>
+                <div class="sub-content">
+                    <p>สำหรับนักเรียนนักศึกษา</p>
+                    <a href="#">ลงทะเบียน</a>
+                    <a href="#">ทำแบบทดสอบ</a>
+                </div>
+                <div class="line"></div>
+                <div class="sub-content">
+                    <p>สำหรับสถานประกอบการ</p>
+                    <a href="#">ลงทะเบียน</a>
+                    <a href="#">ลงประกาศรับเด็กฝึกงาน</a>
+                </div>
+                <div class="line"></div>
+                <div class="sub-content">
+                    <p>เว็บไซต์</p>
+                    <a href="#">เกี่ยวกับเว็บไซต์</a>
+                    <a href="#">เกี่ยวผู้พัฒนา</a>
+                    <a href="#">ติดต่อเรา</a>
+                    <a href="#">Icon</a>
+                    <a href="#">ภาพประกอบเว็บไซต์</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/settings.js"></script>
+</body>
+</html>

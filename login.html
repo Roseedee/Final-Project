@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="../../pictures/Icon/icon_logo.png">
+    <link rel="icon" href="pictures/Icon/icon_logo.png">
+    <script src="script/input_password.js"></script>
+    <title>MyInternship</title>
+</head> 
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="pictures/Icon/Logo/logoSTD.png" alt="logo"></a>
+            </div>
+            <div class="main-menu">
+                <a href="index.html" class="icon-home"><img src="pictures/Icon/home.png" alt="icon home"></a>
+                <a href="#">ที่ฝึกงานทั้งหมด</a>
+                <a href="#">ทำแบบทดสอบ</a>
+                <a href="page/company/enterprofile.html" class="menu-forcompany">สำหรับสถานประกอบการ</a>
+                <a href="page/student/enterprofile.html" class="menu-register">ลงทะเบียน</a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container" id="container">
+        <div class="content">
+            <div class="img">
+                <img src="/pictures/Image/img_login.jpg" alt="">
+            </div>
+            <div class="form-input">
+                <p>Login</p>
+                <form action="#">
+                    <div class="input-username">
+                        <div class="icon-textbox">
+                            <img src="../../pictures/Icon/user.png" alt="">
+                        </div>
+                        <input class="username" type="text" name="username" placeholder="อีเมลล์หรือเบอร์โทร">
+                    </div>
+                    <p class="log-username"></p>
+                    <div class="input-password">
+                        <div class="icon-textbox">
+                            <img src="../../pictures/Icon/lock.png" alt="">
+                        </div>
+                        <input class="password" type="password" name="password" placeholder="รหัสผ่าน">
+                        <div class="icon-textbox icon-show" onclick="showAndHidepsw(0)">
+                            <img class="iconlookpsw" src="../../pictures/Icon/show.png" alt="">
+                        </div>
+                    </div>
+                    <p class="log-password"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

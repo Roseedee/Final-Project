@@ -1,3 +1,65 @@
-.inputn {
-    background-color: black;
+@import "public-style-st.css";
+
+
+.content-enterprofile .form-input {
+    width: 100%;
 }
+
+.form-input {
+    padding-top: 20px;
+}
+
+.form-input form {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+.form-input form span {
+    font-size: 20px;
+    display: block;
+    margin: 30px 0px 10px 0px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0px 10px 0px 0px;
+    position: relative;
+}
+
+.input-email {
+    flex-grow: 2;
+}
+
+
+.sub-input {
+    flex-grow: 1;
+    padding: 10px 5px;
+}
+
+.box-submit {
+    text-align: right;
+    padding: 40px 0px 80px 0px;
+}
+.box-submit input[type="submit"] {
+    padding: 10px 70px;
+    border: 2px solid #97E585;
+    border-radius: 5px;
+    background-color: white;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.box-submit input[type="submit"]:hover {
+    background-color: #97E585;
+}
+
+
