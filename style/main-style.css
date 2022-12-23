@@ -19,6 +19,12 @@ a {
     text-decoration: none;
 }
 
+.log {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+}
+
 @media (max-width: 1000px) {
     * {
         font-size: 14px;

@@ -23,8 +23,26 @@
     height: 2.9vw;
 }
 
-.log {
-    font-size: 15px;
-    font-weight: 300;
-    font-style: italic;
+.box-submit {
+    text-align: right;
+    padding: 40px 0px 80px 0px;
+}
+.box-submit input[type="submit"] {
+    padding: 10px 70px;
+    border: 2px solid #50C1BD;
+    border-radius: 5px;
+    background-color: white;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.box-submit input[type="submit"]:hover {
+    background-color: #50C1BD;
+}
+
+@media (max-width: 800px) {
+    .title p {
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
 }

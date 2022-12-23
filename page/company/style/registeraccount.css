@@ -99,20 +99,6 @@
     background-color: #97E585;
 }
 
-
-.box-submit input[type="submit"] {
-    padding: 10px 50px;
-    border: 2px solid #97E585;
-    border-radius: 5px;
-    background-color: white;
-    transition: 0.3s;
-    font-size: 16px;
-}
-
-.box-submit input[type="submit"]:hover {
-    background-color: #97E585;
-}
-
 .input-section .psw-level {
     display: flex;
     justify-content: space-between;

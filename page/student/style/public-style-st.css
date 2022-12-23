@@ -5,9 +5,9 @@
 }
 
 .title p {
+    background-color: #97E585;
     padding: 20px 40px;
     margin-bottom: 20px;
-    background-color: #97E585;
     font-size: 23px;
     width: fit-content;
     border-radius: 10px 0 10px 0;
@@ -23,3 +23,9 @@
     height: 2.9vw;
 }
 
+@media (max-width: 800px) {
+    .title p {
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+}

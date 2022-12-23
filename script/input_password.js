@@ -1,6 +1,7 @@
 checkpassword();
 setlevelpassword(strength);
 showAndHidepsw(index);
+_clear(index);
 
 function showAndHidepsw(index) {
     let input_psw = document.getElementsByClassName('password');
@@ -42,4 +43,9 @@ function setlevelpassword(strength) {
             psw_level[i].style.backgroundColor = "#EEDCDC";
         }
     }
+}
+
+function _clear(index) {
+  let input = document.getElementById('username');
+  input.value = "";
 }
