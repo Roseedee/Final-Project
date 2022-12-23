@@ -126,3 +126,14 @@ input[type="submit"] {
     margin: 0px;
     margin-top: 20px;
 }
+
+.submit {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #6431DB;
+    color: black;
+}
+
+.submit:hover {
+    background-color: #6431DB;
+    color: white;
+}
