@@ -2,6 +2,7 @@
 @import "content.css";
 @import "footer.css";
 @import "input_text.css";
+@import "post.css";
 
 * {
     padding: 0px;

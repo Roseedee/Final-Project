@@ -69,34 +69,70 @@
     padding: 15px 10px;
 }
 
-.user-img-container {
-    width: 100%;
-    text-align: center;
-}
-
 .sub-content-profile-end {
     float: left;
 }
 
-.user-img-container .user-img {
-    padding-bottom: 1.5vw;
+.user-img-container {
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.user-img-container .logo {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-img-container .logo img {
+    width: 90%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.45);
+}
+
+.user-img-container .another {
+    flex-grow: 1;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-.user-img-container .user-name {
-    font-size: 22px;
-    font-weight: 600;
+.user-img-container .another .company-name {
+    font-size: 25px;
+    font-weight: 700;
 }
 
-.user-img-container .user-img img {
-    min-width: 170px;
-    width: 30%;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+.user-img-container .another .star {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
 }
+
+.user-img-container .another .star img {
+    width: 32px;
+    margin: 10px 0px;
+    height: auto;
+}
+
+.user-img-container .another .picture-company {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.user-img-container .another .picture-company img {
+    width: 200px;
+}
+
+
+
 
 .sub-content-profile .sub-content-title {
     text-align: center;
@@ -137,52 +173,6 @@
 
 .sub-content-profile .job-details p {
     text-indent: 2.5rem;
-}
-
-.post {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    background-color: #E9FFD1;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    margin: 10px 0px;
-}
-
-.post .icon-company {
-    width: 256px;
-    height: 256px;
-    padding: 20px 20px;
-}
-
-.post .icon-company img {
-    border-radius: 50%;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-    width: 100%;
-}
-
-.post .container-operator {
-    display: flex;
-    flex-direction: row;
-    padding-top: 10px;
-    padding-right: 10px;
-}
-
-.post .container-operator .operator {
-    width: 32px;
-    height: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-}
-
-.post .container-operator .operator:hover {
-    background-color: white;
-}
-
-.post .container-operator .operator img {
-    width: 60%;
 }
 
 

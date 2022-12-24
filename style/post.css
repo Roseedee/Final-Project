@@ -1,0 +1,114 @@
+.post {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #E9FFD1;
+    overflow: ellipsis;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+.icon-company {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px 10px 0px 20px;
+}
+
+.icon-company img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.content-post {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+.content-post .title-post {
+    font-size: 22px;
+    font-weight: 500;
+
+}
+/* container for about company */
+.content-post .about-company {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 5px 0px;
+}
+/* icon company */
+.content-post .about-company img {
+    width: 22px;
+    margin-right: 10px;
+}
+
+.content-post .about-company span {
+    color: #8B8B8B;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.content-post .details {
+    margin-top: 5px;
+    text-align: justify;
+    font-weight: 300;
+    height: 150px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.post .container-operator {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container-operator .operator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+}
+
+.container-operator .operator:first-of-type { 
+    margin-right: 5px;
+
+}
+
+.container-operator .operator:hover {
+    background-color: #fff;
+}
+
+.container-operator .operator img {
+    width: 70%;
+}
+
+.add-post {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px 0px;
+    border: 1px solid rgba(0, 0, 0, .45);
+    border-radius: 5px;
+    background-color: #FFF7F8;
+}
+
+.add-post:hover {
+    background-color: #e4dede;
+}
+
+.add-post img {
+    width: 32px;
+}
