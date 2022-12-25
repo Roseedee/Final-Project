@@ -130,14 +130,13 @@
             let enable_settime = document.getElementById("enable-settime").checked;
             let post_time = document.getElementById("post-time");
             let del_time = document.getElementById("del-time");
-            if(enable_settime) {
+            if(enable_settime == true) {
                 post_time.removeAttribute("disabled");
                 del_time.removeAttribute("disabled");
-            }else {
-                post_time.setAttribute("disabled");
-                del_time.setAttribute("disabled");
+            }else if(enable_settime == false) {
+                post_time.setAttribute("disabled", "disabled");
+                del_time.setAttribute("disabled", "disabled");
             }
-            window.alert(enable_settime);
         }
     </script>
 </body>
