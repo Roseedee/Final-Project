@@ -1,11 +1,16 @@
+.container-post {
+    display: flex;
+    flex-direction: column;
+    background-color: #E9FFD1;
+    border: 1px solid rgba(0, 0, 0, 0.45);
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
 .post {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    background-color: #E9FFD1;
-    overflow: ellipsis;
-    margin: 10px 0px;
-    border-radius: 5px;
 }
 
 .icon-company {
@@ -17,8 +22,8 @@
 }
 
 .icon-company img {
-    width: 128px;
-    height: 128px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -27,6 +32,7 @@
     display: flex;
     flex-direction: column;
     padding: 10px 10px;
+    flex-grow: 1;
 }
 
 .content-post .title-post {
@@ -59,7 +65,7 @@
     margin-top: 5px;
     text-align: justify;
     font-weight: 300;
-    height: 150px;
+    max-height: 125px;
     overflow-y: auto;
     padding-right: 10px;
 }
@@ -69,6 +75,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+    justify-self: end;
     padding: 10px;
 }
 
@@ -93,6 +100,18 @@
 
 .container-operator .operator img {
     width: 70%;
+}
+
+.container-post-date {
+    display: flex;
+    justify-content: left;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.container-post-date .post-date {
+    font-size: 12px;
+    font-weight: 300;
 }
 
 .add-post {

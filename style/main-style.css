@@ -21,9 +21,10 @@ a {
 }
 
 .log {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 300;
     font-style: italic;
+    color: #B89D9D;
 }
 
 @media (max-width: 1000px) {

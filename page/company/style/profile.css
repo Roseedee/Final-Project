@@ -1,4 +1,4 @@
-@import "public-style-st.css";
+@import "public-style-cp.css";
 
 :root {
     --content_font_size_l : 18;
@@ -76,6 +76,7 @@
 .user-img-container {
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
 }
@@ -131,9 +132,6 @@
     width: 200px;
 }
 
-
-
-
 .sub-content-profile .sub-content-title {
     text-align: center;
     padding: 0.5vw;
@@ -187,6 +185,15 @@
     }
     .sub-content-profile-empty {
         display: none;
+    }
+    .user-img-container {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .user-img-container .logo, .user-img-container .another {
+        align-items: center;
     }
 
 }

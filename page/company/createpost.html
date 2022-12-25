@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- include style file -->
+    <link rel="stylesheet" href="style/createpost.css">
+    <link rel="icon" href="../../pictures/Icon/icon_logo.png">
+    <title>MyInternship</title>
+</head> 
+<body>
+<header class="header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="../../index.html"><img src="../../pictures/Icon/Logo/logoSTD.png" alt="logo"></a>
+            </div>
+            <div class="main-menu">
+                <a href="../../index.html" class="icon-home"><img src="../../pictures/Icon/home.png" alt="icon home"></a>
+                <a href="#">โพสต์ทั้งหมด</a>
+                <a href="profile.html"><img class="account-menu" src="../../pictures/Icon/building.gif" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <!-- conntent -->
+    <div class="content content-enterprofile">
+        <div class="title">
+            <p>สร้างโพสต์</p>
+        </div>
+        <div class="form-input">
+            <form action="#">
+                <span>เกี่ยวโพสต์</span>
+                <div class="input-group">
+                    <div class="input-section">
+                        <input class="input" type="text" name="name-th" placeholder="หัวข้อ">
+                        <p class="log">log</p>
+                    </div>
+                </div>
+                <span><input type="checkbox" id="enable-settime" onclick="checkbox_settime()" style="margin-right: 10px;">ตั้งเวลา</span>
+                <div class="input-group" id="settime-container">
+                    <div class="input-section">
+                        <input class="input" type="date" name="set-time-post" id="post-time" disabled>
+                        <p class="log">วันเวลาโพสต์</p>
+                    </div>
+                    <div class="input-section">
+                        <input class="input" type="date" name="del-time-post" id="del-time" disabled>
+                        <p class="log">วันเวลาลบโพสต์</p>
+                    </div>
+                </div>
+                <span>รายละเอียดเกี่ยวกับการฝึกงาน</span>
+                <div class="input-group">
+                    <div class="input-section">
+                        <textarea class="input" type="text" name="name-th" rows="10" placeholder="รายละเอียดในการฝึกงาน"></textarea>
+                    </div>
+                </div>
+                <span>การค้นหา</span>
+                <div class="input-group">
+                    <div class="input-section">
+                        <input class="input" type="text" name="name-th" placeholder="สร้างคีย์เวิร์ด">
+                        <p class="log">ใช้เว้นวรรคการสร้างหนึ่งคียเวิร์ด</p>
+                    </div>
+                </div>
+                <div class="input-group" style="margin-top: 10px;">
+                    <div class="input-section">
+                        <select class="input" name="่job-type">
+                            <option value="">ไอที</option>
+                            <option value="">วิศวกรรม</option>
+                        </select>
+                        <p class="log">เลือกหมวดหมู่าน</p>
+                    </div>
+                    <div class="input-section">
+                        <input class="input" type="text" name="name-th" placeholder="พิมพ์ทักษะที่ควรมีในการฝึกงาน">
+                        <p class="log">ใช้เว้นวรรคการสร้างหนึ่งทักษะ</p>
+                    </div>
+                </div>
+                <div class="box-submit">
+                    <input type="submit" value="บันทึก">
+                    <a href="#">บันทึก</a>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+
+    <div class="footer">
+        <div class="content-footer">
+            <div class="logo-footer">
+                <img src="../../pictures/Icon/Logo/logoSTD.png" alt="">
+            </div>
+            <div class="informations">
+                <div class="sub-content">
+                    <p>เนื้อหา</p>
+                    <a href="#">ที่ฝึกงานทั้งหมด</a>
+                    <a href="#">สถานประกอบการที่เข้าร่วม</a>
+                    <a href="#">ค้นหาที่ฝึกงานด้วยตัวเอง</a>
+                </div>
+                <div class="line"></div>
+                <div class="sub-content">
+                    <p>ค้นหา</p>
+                    <a href="#">ค้นหาตามสายงาน</a>
+                    <a href="#">ค้นหาตามทักษะ</a>
+                    <a href="#">ค้นหาตามที่อยู่</a>
+                </div>
+                <div class="line"></div>
+                <div class="sub-content">
+                    <p>สำหรับนักเรียนนักศึกษา</p>
+                    <a href="#">ลงทะเบียน</a>
+                    <a href="#">ทำแบบทดสอบ</a>
+                </div>
+                <div class="line"></div>
+                <div class="sub-content">
+                    <p>สำหรับสถานประกอบการ</p>
+                    <a href="#">ลงทะเบียน</a>
+                    <a href="#">ลงประกาศรับเด็กฝึกงาน</a>
+                </div>
+                <div class="line"></div>
+                <div class="sub-content">
+                    <p>เว็บไซต์</p>
+                    <a href="#">เกี่ยวกับเว็บไซต์</a>
+                    <a href="#">เกี่ยวผู้พัฒนา</a>
+                    <a href="#">ติดต่อเรา</a>
+                    <a href="#">Icon</a>
+                    <a href="#">ภาพประกอบเว็บไซต์</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function checkbox_settime() {
+            let enable_settime = document.getElementById("enable-settime").checked;
+            let post_time = document.getElementById("post-time");
+            let del_time = document.getElementById("del-time");
+            if(enable_settime) {
+                post_time.removeAttribute("disabled");
+                del_time.removeAttribute("disabled");
+            }else {
+                post_time.setAttribute("disabled");
+                del_time.setAttribute("disabled");
+            }
+            window.alert(enable_settime);
+        }
+    </script>
+</body>
+</html>
