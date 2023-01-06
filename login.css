@@ -34,7 +34,7 @@ body {
 }
 
 .form-input {
-    padding: 40px 20px;
+    padding: 40px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +51,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px 40px;
+    padding: 20px 0px;
 }
 
 form .register {
@@ -70,7 +70,6 @@ form .register a {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    flex-grow: 1;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
@@ -79,7 +78,7 @@ form .register a {
     font-size: 15px;
     font-weight: 300;
     text-overflow: ellipsis;
-    margin-top: 20px;
+    margin-top: 20px
 }
 
 .input-group:hover {
@@ -103,7 +102,6 @@ form .register a {
 .input-group input {
     border: none;
     outline: none;
-    padding: 0px 10px;
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     font-weight: 300;
@@ -124,7 +122,6 @@ form .register a {
 
 input[type="submit"] {
     margin: 0px;
-    margin-top: 20px;
 }
 
 .submit {

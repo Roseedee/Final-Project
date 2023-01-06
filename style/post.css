@@ -22,8 +22,8 @@
 }
 
 .icon-company img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -32,7 +32,6 @@
     display: flex;
     flex-direction: column;
     padding: 10px 10px;
-    flex-grow: 1;
 }
 
 .content-post .title-post {
@@ -46,18 +45,18 @@
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    padding: 5px 0px;
+    padding: 3px 0px;
 }
 /* icon company */
 .content-post .about-company img {
-    width: 22px;
+    width: 16px;
     margin-right: 10px;
 }
 
 .content-post .about-company span {
     color: #8B8B8B;
     font-style: italic;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
 }
 
@@ -65,8 +64,9 @@
     margin-top: 5px;
     text-align: justify;
     font-weight: 300;
-    max-height: 125px;
+    max-height: 100px;
     overflow-y: auto;
+    font-size: 14px;
     padding-right: 10px;
 }
 

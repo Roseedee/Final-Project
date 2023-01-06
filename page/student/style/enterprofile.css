@@ -12,7 +12,7 @@
 
 .sub-input {
     flex-grow: 1;
-    padding: 10px 5px;
+    padding: 5px 5px;
 }
 
 .box-submit {
@@ -32,4 +32,8 @@
 
 .box-submit input[type="submit"]:hover {
     background-color: #97E585;
+}
+
+.input-section {
+    padding: 0px 10px 0px 0px;
 }

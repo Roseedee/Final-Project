@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- include sytle file -->
-    <link rel="stylesheet" href="../../style/main-style.css">
-    <link rel="stylesheet" href="style/registeraccount.css">
-    <link rel="stylesheet" href="style/public-style-st.css">
+    <link rel="stylesheet" href="style/dashboard.css">
     <!-- include icon title page -->
     <link rel="icon" href="../../pictures/Icon/icon_logo.png">
     <!-- include js file -->
@@ -31,8 +29,255 @@
         </div>
     </header>
     <!-- conntent -->
-    <div class="content content-register">
-        
+    <div class="content content-dashboard">
+        <div class="container-search">
+            <form action="">
+                <div class="container-title-condition">
+                    <img src="../../pictures/Icon/filter.png" alt="">
+                    <p>เงื่อนไขการค้นหา</p>
+                </div>
+                <div class="input-group">
+                    <div class="input-section">
+                        <select name="job_type" class="input">
+                            <option value="">คอม</option>
+                            <option value="">คอม</option>
+                            <option value="">คอม</option>
+                            <option value="">คอม</option>
+                            <option value="">คอม</option>
+                            <option value="">คอม</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-section">
+                        <input type="text" class="input" placeholder="ค้นหาโดยใช้ชื่อสถานประกอบการ">
+                    </div>
+                </div>
+                <div class="container-title-condition">
+                    <img src="../../pictures/Icon/location.png" alt="">
+                    <p>เงื่อนไขการค้นหา</p>
+                </div>
+                <div class="input-group">
+                    <div class="input-section">
+                        <input type="text" class="input" placeholder="ตำบล">
+                    </div>
+                    <div class="input-section">
+                        <input type="text" class="input" placeholder="อำเภอ">
+                    </div>
+                    <div class="input-section">
+                        <input type="text" class="input" placeholder="จังหวัด">
+                    </div>
+                </div>
+                <div class="input-group" style="justify-content: space-between; margin-top: 5px;">
+                    <input type="button" value="ยกเลิก" class="submit btn-cancel" id="cancel-add-interested">
+                    <input type="submit" class="submit" value="ค้นหา">
+                </div>
+            </form>
+        </div>
+        <div class="container-search">
+            <div class="banner">
+                <div class="container-title-search">
+                    <img src="../../pictures/Icon/search.png" alt="">
+                    <p>ค้นหาที่ฝึกงาน</p>
+                </div>
+                <form action="#">
+                    <div class="input-group">
+                        <div class="input-section" style="flex-grow: 10; margin-right: 10px;">
+                            <input type="text" class="input" placeholder="พิมพ์คำหลักเพื่อค้นหา">
+                        </div>
+                        <div class="input-section">
+                            <input type="subtmit" class="submit" value="ค้นหา">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <a href="postfullview.html">
+                <div class="container-post">
+                    <div class="post">
+                        <div class="icon-company">
+                            <img src="../../pictures/Icon/building.gif" alt="">
+                        </div>
+                        <div class="content-post">
+                            <div style="display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center;">
+                                <p class="title-post" >Post Title</p>
+                                <a href="#"><img src="../../pictures/Icon/unstar.png" style="width: 25px; height: 25px; margin-left: 10px;" alt=""></a>
+                            </div>
+                            <div class="about-company">
+                                <img src="../../pictures/Icon/flat.png" alt="">
+                                <span>คอมพิวเตอร์ ชิป(MyComputer ship)</span>
+                            </div>
+                            <div class="about-company">
+                                <img src="../../pictures/Icon/location.png" alt="">
+                                <span>คอมพิวเตอร์ ชิป(MyComputer ship)</span>
+                            </div>
+                            <p class="details">
+                                รายละเอียด : Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque nostrum
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quis quisquam quos magni totam nihil, mollitia at ad possimus similique doloremque neque accusamus, ab ratione repellat iusto reprehenderit numquam asperiores.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veritatis non voluptates nulla ab, vero asperiores maxime excepturi iusto at, architecto doloribus repudiandae aspernatur autem. Labore obcaecati rem voluptatum necessitatibus
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-post-date">
+                        <p class="post-date">9/12/2656 5:00</p>
+                    </div>
+                </div>
+            </a>
+            <a href="postfullview.html">
+                <div class="container-post">
+                    <div class="post">
+                        <div class="icon-company">
+                            <img src="../../pictures/Icon/building.gif" alt="">
+                        </div>
+                        <div class="content-post">
+                            <div style="display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center;">
+                                <p class="title-post" >Post Title</p>
+                                <a href="#"><img src="../../pictures/Icon/unstar.png" style="width: 25px; height: 25px; margin-left: 10px;" alt=""></a>
+                            </div>
+                            <div class="about-company">
+                                <img src="../../pictures/Icon/flat.png" alt="">
+                                <span>คอมพิวเตอร์ ชิป(MyComputer ship)</span>
+                            </div>
+                            <div class="about-company">
+                                <img src="../../pictures/Icon/location.png" alt="">
+                                <span>คอมพิวเตอร์ ชิป(MyComputer ship)</span>
+                            </div>
+                            <p class="details">
+                                รายละเอียด : Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque nostrum
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quis quisquam quos magni totam nihil, mollitia at ad possimus similique doloremque neque accusamus, ab ratione repellat iusto reprehenderit numquam asperiores.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veritatis non voluptates nulla ab, vero asperiores maxime excepturi iusto at, architecto doloribus repudiandae aspernatur autem. Labore obcaecati rem voluptatum necessitatibus
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-post-date">
+                        <p class="post-date">9/12/2656 5:00</p>
+                    </div>
+                </div>
+            </a>
+            <a href="postfullview.html">
+                <div class="container-post">
+                    <div class="post">
+                        <div class="icon-company">
+                            <img src="../../pictures/Icon/building.gif" alt="">
+                        </div>
+                        <div class="content-post">
+                            <div style="display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center;">
+                                <p class="title-post" >Post Title</p>
+                                <a href="#"><img src="../../pictures/Icon/unstar.png" style="width: 25px; height: 25px; margin-left: 10px;" alt=""></a>
+                            </div>
+                            <div class="about-company">
+                                <img src="../../pictures/Icon/flat.png" alt="">
+                                <span>คอมพิวเตอร์ ชิป(MyComputer ship)</span>
+                            </div>
+                            <div class="about-company">
+                                <img src="../../pictures/Icon/location.png" alt="">
+                                <span>คอมพิวเตอร์ ชิป(MyComputer ship)</span>
+                            </div>
+                            <p class="details">
+                                รายละเอียด : Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque nostrum
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quis quisquam quos magni totam nihil, mollitia at ad possimus similique doloremque neque accusamus, ab ratione repellat iusto reprehenderit numquam asperiores.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veritatis non voluptates nulla ab, vero asperiores maxime excepturi iusto at, architecto doloribus repudiandae aspernatur autem. Labore obcaecati rem voluptatum necessitatibus
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-post-date">
+                        <p class="post-date">9/12/2656 5:00</p>
+                    </div>
+                </div>
+            </a>
+            <a href="postfullview.html">
+                <div class="container-post">
+                    <div class="post">
+                        <div class="icon-company">
+                            <img src="../../pictures/Icon/building.gif" alt="">
+                        </div>
+                        <div class="content-post">
+                            <div style="display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center;">
+                                <p class="title-post" >Post Title</p>
+                                <a href="#"><img src="../../pictures/Icon/unstar.png" style="width: 25px; height: 25px; margin-left: 10px;" alt=""></a>
+                            </div>
+                            <div class="about-company">
+                                <img src="../../pictures/Icon/flat.png" alt="">
+                                <span>คอมพิวเตอร์ ชิป(MyComputer ship)</span>
+                            </div>
+                            <div class="about-company">
+                                <img src="../../pictures/Icon/location.png" alt="">
+                                <span>คอมพิวเตอร์ ชิป(MyComputer ship)</span>
+                            </div>
+                            <p class="details">
+                                รายละเอียด : Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque nostrum
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quis quisquam quos magni totam nihil, mollitia at ad possimus similique doloremque neque accusamus, ab ratione repellat iusto reprehenderit numquam asperiores.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veritatis non voluptates nulla ab, vero asperiores maxime excepturi iusto at, architecto doloribus repudiandae aspernatur autem. Labore obcaecati rem voluptatum necessitatibus
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-post-date">
+                        <p class="post-date">9/12/2656 5:00</p>
+                    </div>
+                </div>
+            </a>
+            <a href="postfullview.html">
+                <div class="container-post">
+                    <div class="post">
+                        <div class="icon-company">
+                            <img src="../../pictures/Icon/building.gif" alt="">
+                        </div>
+                        <div class="content-post">
+                            <div style="display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center;">
+                                <p class="title-post" >Post Title</p>
+                                <a href="#"><img src="../../pictures/Icon/unstar.png" style="width: 25px; height: 25px; margin-left: 10px;" alt=""></a>
+                            </div>
+                            <div class="about-company">
+                                <img src="../../pictures/Icon/flat.png" alt="">
+                                <span>คอมพิวเตอร์ ชิป(MyComputer ship)</span>
+                            </div>
+                            <div class="about-company">
+                                <img src="../../pictures/Icon/location.png" alt="">
+                                <span>คอมพิวเตอร์ ชิป(MyComputer ship)</span>
+                            </div>
+                            <p class="details">
+                                รายละเอียด : Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque nostrum
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quis quisquam quos magni totam nihil, mollitia at ad possimus similique doloremque neque accusamus, ab ratione repellat iusto reprehenderit numquam asperiores.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veritatis non voluptates nulla ab, vero asperiores maxime excepturi iusto at, architecto doloribus repudiandae aspernatur autem. Labore obcaecati rem voluptatum necessitatibus
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-post-date">
+                        <p class="post-date">9/12/2656 5:00</p>
+                    </div>
+                </div>
+            </a>
+            <a href="postfullview.html">
+                <div class="container-post">
+                    <div class="post">
+                        <div class="icon-company">
+                            <img src="../../pictures/Icon/building.gif" alt="">
+                        </div>
+                        <div class="content-post">
+                            <div style="display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center;">
+                                <p class="title-post" >Post Title</p>
+                                <a href="#"><img src="../../pictures/Icon/unstar.png" style="width: 25px; height: 25px; margin-left: 10px;" alt=""></a>
+                            </div>
+                            <div class="about-company">
+                                <img src="../../pictures/Icon/flat.png" alt="">
+                                <span>คอมพิวเตอร์ ชิป(MyComputer ship)</span>
+                            </div>
+                            <div class="about-company">
+                                <img src="../../pictures/Icon/location.png" alt="">
+                                <span>คอมพิวเตอร์ ชิป(MyComputer ship)</span>
+                            </div>
+                            <p class="details">
+                                รายละเอียด : Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eaque nostrum
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quis quisquam quos magni totam nihil, mollitia at ad possimus similique doloremque neque accusamus, ab ratione repellat iusto reprehenderit numquam asperiores.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veritatis non voluptates nulla ab, vero asperiores maxime excepturi iusto at, architecto doloribus repudiandae aspernatur autem. Labore obcaecati rem voluptatum necessitatibus
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-post-date">
+                        <p class="post-date">9/12/2656 5:00</p>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
 
     <div class="footer">
